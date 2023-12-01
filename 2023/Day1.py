@@ -1,4 +1,3 @@
-
 def dataCompiler():
     '''
     Reads the data file, and returns stripped a list with stripped lines
@@ -10,6 +9,7 @@ def dataCompiler():
         for line in r:
             lines.append(line.strip())
     return lines
+
 
 def numberExtractor(data):
     '''
