@@ -22,7 +22,6 @@ def colourCalc(data):
         A dict with the highest draws of each colour
     '''
     colourDict = {'green' : 0, 'red' : 0, 'blue' : 0}
-    # print(data)
     for draw in data:
         colourDraw = {'green' : 0, 'red' : 0, 'blue' : 0}
         draw = draw.split(",")
@@ -30,7 +29,6 @@ def colourCalc(data):
             colour = colour.lstrip()
             colour = colour.split(" ")
             colourDraw[colour[1]] += int(colour[0])
-        # print(colourDraw)
         for colour in colourDraw:
             if colourDraw[colour] > colourDict[colour]:
                 colourDict[colour] = colourDraw[colour]
